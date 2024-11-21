@@ -11,8 +11,9 @@ mongoose.connect(process.env.MONGO).then(() => {
 //creating an application
 const app = express();
 
-//list to the port number
-app.listen(3000, () => {
-    console.log("Be aware server is running.....");
+const PORT = 3001;
+//listen to the port number
+app.listen(PORT, () => {
+    console.log(`Be aware server is running on port:${PORT}`);
 })
 
